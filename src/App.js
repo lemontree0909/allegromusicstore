@@ -1,25 +1,56 @@
-import logo from './logo.svg';
+import React from "react";
+import {
+
+  BrowserRouter as Router,
+
+  Routes,
+
+  Route,
+
+  Link
+
+} from "react-router-dom";
+import Home from "./Home";
+import Shop from "./Shop";
+import Academy from "./Academy";
+import ContactUs from "./ContactUs";
+
 import './App.css';
+import { useTranslation } from "react-i18next";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const { i18n, t } = useTranslation();
+
+  const toggleLang = () => {
+    i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en')
+  }
+
+  return <Router>
+    <nav>
+      <div className="nav">
+      <Link to ="/home" className="link">{t('About us')}</Link>
+      <Link to ="/" className="link">{t('Shop')}</Link>
+      <Link to ="/academy" className="link">{t('Allegro Academy')}</Link>
+      <Link to ="/contact" className="link">{t('Contact Us')}</Link>
+      </div>
+
+      <button className="btn-home right" onClick={toggleLang}>
+        {i18n.language === 'en' ? 'RU' : 'EN'}
+      </button>
+
+    </nav>
+    
+
+
+    <Routes>
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/" element={<Shop/>}/>
+      <Route path="/academy" element={<Academy/>}/>
+      <Route path="/contact" element={<ContactUs/>}/>
+    </Routes>
+
+  </Router>
 }
 
 export default App;
