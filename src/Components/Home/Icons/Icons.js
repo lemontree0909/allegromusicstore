@@ -1,5 +1,5 @@
-import './App.css';
-import { dataIcons } from "./data/dataIcons";
+import '../../../App.css';
+import { dataIcons } from "../../../data/dataIcons";
 import { useTranslation } from "react-i18next";
 
 

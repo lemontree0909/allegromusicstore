@@ -1,6 +1,5 @@
-import Carousel from "./Carousel";
-import Footer from "./Footer";
-import Icons from "./Icons";
+import Carousel from "./Carousel/Carousel";
+import Icons from "./Icons/Icons";
 
 function Home(){
 
@@ -9,7 +8,6 @@ function Home(){
         <div>
             <Carousel/>
             <Icons/>
-            <Footer/>
 
         </div>
     )

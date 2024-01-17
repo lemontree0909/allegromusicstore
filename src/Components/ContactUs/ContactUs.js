@@ -1,5 +1,6 @@
-import Footer from "./Footer";
 import { useTranslation } from "react-i18next";
+import '../../App.css';
+
 
 
 function ContactUs(){
@@ -69,7 +70,6 @@ function ContactUs(){
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }

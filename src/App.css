@@ -1,8 +1,19 @@
 @import url(//db.onlinewebfonts.com/c/2596224269750e00c3ad5356299a3b9f?family=Ogg);
-body{
+body {
   margin: 0;
   background-color: #fef0de;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 .container{
   min-height: 120vh;
   position: relative;
@@ -10,20 +21,30 @@ body{
 
 nav {
   display: flex;
-  justify-content: center;
-  padding: 15px;
+  justify-content: space-around;
   align-items: center;
+  margin: 0 50px;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: bolder;
 }
-
-.nav{
+.right-side{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
+  margin: auto;
+  width: 15%;
+}
+.left-side{
+  display: flex;
+  margin: auto;
   width: 80%;
-  padding: 5px;
+}
+.navbarElements{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .navbar {
@@ -37,7 +58,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
 }
 
 .icon{
@@ -51,7 +72,7 @@ nav {
 button{
   background: none;
   border: none;
-  color: #fff;
+  /* color: #fff; */
   margin: 10px;
   text-transform: uppercase;
   font-size: 14px;
@@ -62,14 +83,14 @@ button{
   background: #fef0de;
   color: #000;
 }
-input{
+/* input{
   font-family: 'Ubuntu', sans-serif;
 }
 .search{
   font-size: medium;
   line-height: 1.2em;
   margin: 5px 0;
-}
+} */
 
 .btnShow {
   border: none;
@@ -151,7 +172,7 @@ input{
   line-height: 30px;
 }
 .right{
-  /* justify-self: flex-end; */
+  justify-self: flex-end;
   margin-right: 30px;
 }
 .left {
@@ -211,17 +232,17 @@ input{
 }
 .one{
   position: absolute;
-  top: 5em;
+  top: 10em;
   text-transform: uppercase;
 }
 .two{
   position: absolute;
-  top: 9em;
+  top: 12em;
 }
 .btn{
   position: absolute;
   top: 20em;
-  background-color: #fffd38;
+  background-color: #9EBBDB;
   padding: 10px;
   border-radius: 10px;
   color: black;
@@ -271,7 +292,7 @@ input{
 }
 
 .containerCard .card:hover .face.face1{
-  background: #fffd38;
+  background: #ffa05e;
   transform: translateY(0);
 }
 
@@ -317,6 +338,146 @@ input{
   padding: 0;
 }
 
+
+
+
+
+
+
+
+
+
+.cta{
+  background: none;
+  border: none;
+  color: #fff;
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* img{
+  width: 250px;
+} */
+
+.cartIcon{
+  width: 90px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.worldIcon{
+  width: 70px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.categoryButtonSelected{
+  background-color: #9EBBDB;
+
+}
+
+.categoryButton:hover {
+  background: #fef0de;
+  color: #000;
+}
+
+.categoryButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+.icon-trash {
+  width: 22px;
+}
+
+p, h1, h2, button {
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 20px;
+
+}
+
+.btn-order {
+  background-color: #ffa05e;
+  margin: 10px 30px;
+  padding: 10px;
+}
+
+.order{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80%;
+}
+
+
+.hide {
+  display: none;
+}
+
+/* .cart-image {
+  width: 70px;
+  z-index: 2;
+  cursor: pointer;
+} */
+
+.cart-btn {
+  position: relative;
+}
+
+.item-count {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  font-size: 20px;
+  padding: 6px;
+  /* background-color: red;
+  color: white;
+  width: 20px;
+  height: 10px;
+  border-radius: 50%; */
+  z-index: 3;
+}
+
+.cart-icon {
+  border: none;
+  background-color: transparent;
+  /* margin-top: -50px; */
+}
+
+.cart-items {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 13px;
+  width: 300px;
+  font-size: 18px;
+  margin: 20px auto;
+}
+
+.cart-dropdown-container {
+  position: absolute;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  top: 80px;
+  right: 20px;
+  z-index: 5;
+}
+
+
+
+
+
+
+
+
 @media all and (max-width: 800px) {
   .conter{
     display: flex;
@@ -347,6 +508,26 @@ input{
   .two{
     font-size: 15px;
     width: 80%;
-
   }
+
+p, h1, h2, h5, button {
+  font-size: 12px;
+}
+
+.categoryButton {
+  margin: 0;
+  padding: 0;
+}
+.cart-dropdown-container {
+  width: 250px;
+}
+
+.cart-items {
+  border: 1px solid black;
+  padding: 0 15px;
+  font-size: 13px;
+  width: 200px;
+  font-size: 18px;
+  margin: 10px auto;
+}
 }

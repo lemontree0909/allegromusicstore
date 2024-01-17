@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import './App.css';
-import { dataPromo } from "./data/dataPromo";
+import '../../../App.css';
+import { dataPromo } from "../../../data/dataPromo";
 
 function Carousel(){
 

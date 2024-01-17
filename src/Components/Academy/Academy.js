@@ -1,7 +1,8 @@
-import Footer from "./Footer";
 import { useState } from "react";
-import { dataAcademy } from "./data/dataAcademy";
+import { dataAcademy } from "../../data/dataAcademy";
 import { useTranslation } from "react-i18next";
+import '../../App.css';
+
 
 
 function Academy(){
@@ -30,8 +31,8 @@ function Academy(){
 
             return(
             <div className="cont">
-                    <p className="textAcademy">{showMore ? description : description.substring(0,140) + ' ....'}
-                    <button className='btnShow' onClick={() => showTextClick(item)}>{showMore ? 'show less' : 'show more'}</button>
+                    <p className="textAcademy">{t(showMore ? description : description.substring(0,140) + ' ....')}
+                    <button className='btnShow' onClick={() => showTextClick(item)}>{t(showMore ? 'show less' : 'show more')}</button>
                     </p>
             </div>
             )
@@ -41,7 +42,6 @@ function Academy(){
                 <img src="https://images.unsplash.com/photo-1512405173804-40c66c0ed709?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUzfHxtdXNpYyUyMGxlc3NvbnxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60" width="25%" alt="pic"/>
                 <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWMlMjBsZXNzb258ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" width="25%" alt="pic"/>
             </div>
-            <Footer/>
         </div>
     )
 }
