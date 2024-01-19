@@ -11,10 +11,10 @@ const Filter = ({category}) => {
 
     return(
         <div className="cta">
-            <p onClick={() => {dispatch(filterCategory(category))}} 
+            <h4 onClick={() => {dispatch(filterCategory(category))}} 
             className={selectedCategory === category ? 'categoryButtonSelected categoryButton' : 'categoryButton'}>
                 {t(category)}
-            </p>
+            </h4>
         </div>
     )
 }

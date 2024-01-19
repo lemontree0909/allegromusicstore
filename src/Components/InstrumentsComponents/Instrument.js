@@ -27,11 +27,15 @@ const Instrument = ({instrument}) => {
     }
 
     return(
-        <div className="product-card">
-            <img src={image} alt="pic"/>
-            <h2>{t(name)}</h2>
+        <div className="product-card-container">
+
+            <div className="product-card">
+                <img src={image} alt="pic"/>
+                <h2>{t(name)}</h2>
+            </div>
+
             <div className="order">
-                <p>$ {price}</p>
+                <h3>$ {price}</h3>
         {/* отдельный компонент кнопки */}
                 <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
             </div>
@@ -39,6 +43,7 @@ const Instrument = ({instrument}) => {
             <button className="btn-order" onClick={addToCart}>
                 {t("Add to Cart")}
             </button>
+
         </div>
     )
 }

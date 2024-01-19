@@ -102,21 +102,26 @@ button{
   color: black;
   text-transform: uppercase;
 }
-.products {
+.products{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-
-.product-card {
+.product-card-container{
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  padding: 2%;
+  margin: 0 50px 50px 0;
+  padding: -2%;
   flex-grow: 1;
   flex-basis: 16%;
-  margin: 1 30px 30px 1;
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
   font-size: 12px;
 }
 
@@ -128,7 +133,7 @@ button{
   background: none;
   border: none;
   color: #fff;
-  margin: 10px;
+  margin: 5px;
   text-transform: uppercase;
   font-size: 14px;
   cursor: pointer;
@@ -234,19 +239,20 @@ button{
   z-index: 1;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
+  
 }
 .one{
   position: absolute;
-  top: 10em;
+  top: 18em;
   text-transform: uppercase;
 }
 .two{
   position: absolute;
-  top: 12em;
+  top: 20em;
 }
 .btn{
   position: absolute;
-  top: 20em;
+  top: 14em;
   background-color: #9EBBDB;
   padding: 10px;
   border-radius: 10px;
@@ -257,7 +263,7 @@ button{
   color: #fff;
 }
 .containerParent{
-  margin-top: -600px;
+  margin-top: -30em;
   padding: 0;
   min-height: 60vh;
   display: flex;
@@ -272,7 +278,6 @@ button{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .containerCard .card{
@@ -379,25 +384,28 @@ button{
   width: 22px;
 }
 
-/* p, h1, h2, button {
+p, h1, h2, button, span {
 
   font-family: 'Poppins', sans-serif;
 
   font-size: 20px;
 
-} */
+}
 
 .btn-order {
   background-color: #ffa05e;
-  margin: 10px 30px;
+  border-radius: 15px;
+  margin: 5px 30px;
   padding: 10px;
+  font-size: 16px;
 }
 
 .order{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
-  width: 80%;
+  width: 100%;
+  margin-top: -20px;
 }
 
 
@@ -458,22 +466,7 @@ button{
 
 
 
-
-
-
-
 @media all and (max-width: 1000px) {
-
-  .containerParent{
-    position: relative;
-    margin: 0;
-    min-height: 30vh;
-    
-  }
-  .containerCard{
-    flex-direction: column;
-    align-items: center;
-  }
 
   nav{
     justify-content: space-between;
@@ -496,6 +489,18 @@ button{
     padding: 5%;
     font-size: 10px;
   }
+  .containerParent{
+    position: relative;
+    margin-top: -250px;
+    min-height: 30vh;
+  }
+  .containerCard{
+    flex-direction: column;
+    align-items: center;
+  }
+  .left, .title, .adress{
+    font-size: 1rem;
+  }
 }
 
 
@@ -507,8 +512,9 @@ button{
   }
   .left-side{
     position: absolute;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 70px;
+    font-size: 0.7em;
   }
   .right-side{
     position: absolute;
@@ -537,12 +543,31 @@ button{
   }
   .link{
     padding: 0 10px;
-    font-size: 0.8em;
+    font-size: 1.3em;
   }
-  .products {
-    display: flex;
-    justify-content: space-evenly;
+
+  .btn{
+    margin-top: 50px;
+    font-size: 0.9em;
+
   }
+  .one{
+    margin-top: -30px;
+  }
+  .two{
+    margin-top: -30px;
+  }
+  .containerParent{
+    position: relative;
+    margin-top: -150px;
+    min-height: 30vh;
+  }
+  .containerCard{
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 }
 
 
@@ -551,6 +576,10 @@ button{
     margin-top: 120px;
     margin-bottom: 5px;
   }
+  .btn{
+    margin-top: 0px;
+  }
+
   .btn-home{
     font-size: 8px;
     height: 30px;
@@ -564,30 +593,29 @@ button{
   .icon-image{
     width: 40px;
   }
+  .left-side{
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 1em;
+  }
   .link{
-    padding: 2px;
-    font-size: 0.7em;
+    padding: 1px;
+    font-size: 0.8em;
   }
 
   .one{
-    font-size: 20px;
+    margin-top: -30px;
+    font-size: 1em;
   }
   .two{
-    font-size: 15px;
-    width: 80%;
+    margin-top: -30px;
+    font-size: 1em;
   }
   .textStory{
     font-size: 0.8em;
   }
   
-p, h1, h2, h5, button {
-  font-size: 0.4em;
-}
 
-.categoryButton {
-  margin: 0;
-  padding: 0;
-}
 .cart-dropdown-container {
   width: 250px;
 }
@@ -599,5 +627,8 @@ p, h1, h2, h5, button {
   width: 200px;
   font-size: 18px;
   margin: 10px auto;
+}
+.left, .title, .adress{
+  font-size: 0.6rem;
 }
 }
