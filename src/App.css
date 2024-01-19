@@ -24,7 +24,7 @@ nav {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: bolder;
 }
 .link{
@@ -63,7 +63,7 @@ nav {
   flex-wrap: wrap;
   width: 100%;
 }
-.conter, .icon-home{
+.conter, .academyImage, .icon-home{
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
@@ -73,9 +73,13 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 15px;
   max-width: 200px;
   padding: 20px;
+}
+.icon-text{
+  font-size: 0.9em;
+  font-family: 'Poppins', sans-serif;
+
 }
 button{
   background: none;
@@ -95,6 +99,7 @@ button{
   border: none;
   background-color: white;
   color: #43a2f3;
+  font-size: 0.7em;
 }
 .link{
   padding: 10px 40px;
@@ -158,8 +163,8 @@ button{
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
-  margin-top: 5px;
+  font-size: 2em;
+  margin-top: 0;
   font-family: 'Ubuntu', sans-serif;
 }
 .btn-home{
@@ -169,6 +174,7 @@ button{
   border-radius: 10px;
   color: black;
   width: 80px;
+  font-size: 0.6em;
 }
 .btn-home:hover{
   background-color: #000;
@@ -179,8 +185,9 @@ button{
 }
 .titleAcademy{
   font-family: 'Montserrat', sans-serif;
+
   font-weight: bolder;
-  line-height: 2px;
+  margin-bottom: 0;
 }
 .textStory{
   font-family: 'Montserrat', sans-serif;
@@ -194,14 +201,14 @@ button{
 .left {
   display: flex;
   justify-content: flex-start;
-  margin-left: 0;
+  align-items: center;
 }
 
 
 .textAcademy{
-  font-size: 20px;
+  font-size: 0.5em;
   width: 80%;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .footbar {
@@ -217,8 +224,9 @@ button{
 }
 
 .title{
+  font-size: 1.5em;
   color: #fff;
-  margin: 0 15px;
+  margin: 0 50px 0 10px;
   font-family: "Ogg";
 }
 
@@ -527,6 +535,15 @@ p, h1, h2, button, span {
     margin-top: 110px;
     margin-bottom: 20px;
   }
+  .icon-home{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  .container{
+    min-height: 120vh;
+  }
   .container, .contact{
     margin-top: 120px;
   }
@@ -534,7 +551,7 @@ p, h1, h2, button, span {
     height: 40px;
   }
   .icon-home{
-    margin: 20px;
+    margin-bottom: 60px;
   }
   .icon{
     max-width: 100px;
@@ -543,7 +560,6 @@ p, h1, h2, button, span {
   }
   .link{
     padding: 0 10px;
-    font-size: 1.3em;
   }
 
   .btn{
