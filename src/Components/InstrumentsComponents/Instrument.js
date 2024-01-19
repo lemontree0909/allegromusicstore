@@ -31,7 +31,7 @@ const Instrument = ({instrument}) => {
             <img src={image} alt="pic"/>
             <h2>{t(name)}</h2>
             <div className="order">
-                <p>$ {t(price)}</p>
+                <p>$ {price}</p>
         {/* отдельный компонент кнопки */}
                 <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
             </div>

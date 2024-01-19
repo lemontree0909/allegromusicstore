@@ -9,12 +9,12 @@ function Icons(){
 
    
 return(
-    <div className="conter">
+    <div className="icon-home">
         {dataIcons.map((item =>{
             const {id, icon, title, text} = item;
             return(
                 <div className='icon' key={id}>
-                    <img src={icon} width="100px" alt="icon"/>
+                    <img className='icon-image' src={icon} alt="icon"/>
                     <h3>{t(title)}</h3>
                     <p>{t(text)}</p>
 

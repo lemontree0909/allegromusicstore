@@ -33,7 +33,7 @@ function Carousel(){
 return(<div>
     <div className="conter">
         <button className="btn-home" onClick={previousInstrument}>{t('Previous')}</button>
-        <img src={image} width="80%" alt="instrument"/>
+        <img src={image} className="carousel-image" alt="instrument"/>
         <button className="btn-home" onClick={nextInstrument}>{t('Next')}</button>
     </div>
     <div className="info">
