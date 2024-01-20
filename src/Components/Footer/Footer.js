@@ -4,13 +4,13 @@ import '../../App.css';
 
 function Footer(){
 
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation();
 
     return(
         <div className="footbar">
             <div className="left">
                 <h1 className="title">ALLEGRO</h1>
-                <p className="adress">West 45th Street 2nd Floor, New York 10013</p>
+                <p className="adress">{t("West 45th Street 2nd Floor, New York 10013")}</p>
             </div>
             <div className="right">
                 <select onChange={(e) => i18n.changeLanguage(e.target.value)}>

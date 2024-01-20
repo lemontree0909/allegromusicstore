@@ -399,7 +399,10 @@ p, h1, h2, button, span {
   font-size: 20px;
 
 }
-
+.container-buy{
+  display: flex;
+  justify-content: space-between;
+}
 .btn-order {
   background-color: #ffa05e;
   border-radius: 15px;
@@ -407,7 +410,18 @@ p, h1, h2, button, span {
   padding: 10px;
   font-size: 16px;
 }
-
+.btn-buy {
+  background-color: #9EBBDB;
+  border-radius: 15px;
+  padding: 5px 30px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.empty-cart{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
 .order{
   display: flex;
   justify-content: space-around;

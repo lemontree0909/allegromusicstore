@@ -25,6 +25,8 @@
     "YOUR CART IS EMPTY": "ВАША КОРЗИНА ПУСТА",
     "START SHOPPING": "НАЧАТЬ ПОКУПКИ",
     "TOTAL": "ВСЕГО",
+    "BUY": "КУПИТЬ",
+    "Thank you for choosing our market! Here must be form for payment, but it's not a real shop": "Спасибо, что Вы выбрали наш магазин! Здесь должна быть форма для оплаты, но это не настоящий магазин.",
     "BOSTON GP-163 Gloss Black 163 CM Grand Piano": "Рояль BOSTON GP-163 Gloss Black 163 CM",
     "YAMAHA K-125 Gloss Black 125 CM Wall Piano": "Пианино YAMAHA K-125 Gloss Black, 125 см",
     "MARTINEZ ETUDE C / Classical Guitar": "MARTINEZ ETUDE C / Классическая гитара",
@@ -70,6 +72,17 @@
    
      
     "Our stores": "Наши магазины",
-    "contact us for any information and support!":"свяжитесь с нами для получения любой информации и поддержки!"
+    "contact us for any information and support!":"свяжитесь с нами для получения любой информации и поддержки!",
+    "Orange County": "Округ Ориндж",
+    "Dutchess County": "Округ Датчесс",
+    "Brooklyn": "Бруклин",
+    "ADDRESS: 160 Carpenter Avenue, Middletown, NY 10900": "АДРЕС: Карпентер-авеню, 160, Мидлтаун, Нью-Йорк 10900",
+    "ADDRESS: 1686 Route 9 Wappingers Falls, NY 12500": "АДРЕС: 1686 Маршрут 9 Водопад Ваппингерс, Нью-Йорк 12500",
+    "ADDRESS: 64 West St, Suite 113, Brooklyn, NY 11244": "АДРЕС: 64-я Вест улица, 113, Бруклин, Нью-Йорк 11244.",
+    "TEL": "ТЕЛ.",
+    "RETAIL HOURS": "ЧАСЫ РАБОТЫ",
+    "Mon-Sat: 11AM-5PM Sun: Closed": "Пн-Сб: 11:00-17:00 Вс: выходной",
+    "Appointment Only": "Только по предварительной записи",
+    "West 45th Street 2nd Floor, New York 10013": "45-я Вест улица, 2-й этаж, Нью-Йорк 10013"
 
 }

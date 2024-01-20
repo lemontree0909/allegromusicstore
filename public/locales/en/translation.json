@@ -25,6 +25,8 @@
     "YOUR CART IS EMPTY": "YOUR CART IS EMPTY",
     "START SHOPPING": "START SHOPPING",
     "TOTAL": "TOTAL",
+    "BUY": "BUY",
+    "Thank you for choosing our market! Here must be form for payment, but it's not a real shop": "Thank you for choosing our market! Here must be form for payment, but it's not a real shop",
     "BOSTON GP-163 Gloss Black 163 CM Grand Piano": "BOSTON GP-163 Gloss Black 163 CM Grand Piano",
     "YAMAHA K-125 Gloss Black 125 CM Wall Piano": "YAMAHA K-125 Gloss Black 125 CM Wall Piano",
     "MARTINEZ ETUDE C / Classical Guitar": "MARTINEZ ETUDE C / Classical Guitar",
@@ -67,7 +69,18 @@
     "show less": "show less",
     "show more": "show more",
     "Our stores": "Our stores",
-    "contact us for any information and support!":"contact us for any information and support!"
+    "contact us for any information and support!":"contact us for any information and support!",
+    "Orange County": "Orange County",
+    "Dutchess County": "Dutchess County",
+    "Brooklyn": "Brooklyn",
+    "ADDRESS: 160 Carpenter Avenue, Middletown, NY 10900": "ADDRESS: 160 Carpenter Avenue, Middletown, NY 10900",
+    "ADDRESS: 1686 Route 9 Wappingers Falls, NY 12500": "ADDRESS: 1686 Route 9Wappingers Falls, NY 12500",
+    "ADDRESS: 64 West St, Suite 113, Brooklyn, NY 11244": "ADDRESS: 64 West St, Suite 113, Brooklyn, NY 11244",
+    "TEL": "TEL",
+    "RETAIL HOURS": "RETAIL HOURS",
+    "Mon-Sat: 11AM-5PM Sun: Closed": "Mon-Sat: 11AM-5PM Sun: Closed",
+    "Appointment Only": "Appointment Only",
+    "West 45th Street 2nd Floor, New York 10013": "West 45th Street 2nd Floor, New York 10013"
 
 
 }
