@@ -42,14 +42,14 @@ const checkCartnotEmpty = () => {
             <hr/>
 
             <div className='container-buy'>
-            <h3 className='item-total'>{t("TOTAL")}: ${totalPrice.toFixed(0)}</h3>
+                <h3 className='item-total'>{t("TOTAL")}: ${totalPrice.toFixed(0)}</h3>
 
-            <button onClick={ () => setIsOpen(true) } className='btn-buy'>{t("BUY")}</button>
-            {isOpen && 
-            <Modal setIsOpen={setIsOpen}>
-            <Content setIsOpen={setIsOpen}/>
-            </Modal>
-            }
+                <button onClick={ () => setIsOpen(true) } className='btn-buy'>{t("BUY")}</button>
+                {isOpen && 
+                <Modal setIsOpen={setIsOpen}>
+                <Content setIsOpen={setIsOpen}/>
+                </Modal>
+                }
 
             </div>
         </div>

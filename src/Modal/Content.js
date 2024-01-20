@@ -8,7 +8,7 @@ const Content = ( { setIsOpen } ) => {
     return (
         <div className='modal_content'>
             <button className='close-btn' onClick={ () => setIsOpen(false) }>
-                <img src={close} width="30px" alt='close'/>
+                <img className='close-img' src={close} alt='close'/>
             </button>
             <p className='modal-text'>{t("Thank you for choosing our market! Here must be form for payment, but it's not a real shop")}</p>
 
