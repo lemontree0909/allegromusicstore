@@ -14,7 +14,7 @@ const Instruments = () => {
                 if (selectedCategory === 'ALL') return true;
                 return selectedCategory === instrument.category;
             })
-            .map((instrument, id) => <Instrument key={id} instrument={instrument}/>)}
+            .map(instrument => <Instrument key={instrument} instrument={instrument}/>)}
         </div>
     )
 }

@@ -1,12 +1,68 @@
 import { useSelector } from 'react-redux';
 import icon_cart from '../../picture/icons/icon_cart.png';
+import { getTotalQuantity } from '../../redux/cartSlice';
+import { useState } from 'react';
+import '../../App.css';
+import EmptyCart from './EmptyCart';
+import FullCart from './FullCart';
+
+const Cart = () => {
+    const quantity = useSelector(getTotalQuantity);
+    const setIsActive = useState(false);
+
+
+
+const checkCartnotEmpty = () => {
+    if (quantity === 0) {
+        return (
+            <EmptyCart/>
+        ) 
+    } else {
+    return (
+        <FullCart/>
+    )
+}
+}
+
+const onCartHide = (event) => {
+// 👇️ toggle isActive state on click
+    setIsActive(current => !current);
+} 
+// const onCartHide = () => setIsActive(!isActive);
+
+
+return(
+    <div>
+        <div className="cart-btn">
+            <button onClick={onCartHide} className='cart-icon'>
+                <img className='cartIcon' src={icon_cart} alt="icon"/>
+            </button>
+            <p className='item-count'>({quantity})</p>
+        </div>
+        
+        <div className='cart-dropdown-container'>
+            {checkCartnotEmpty()}
+        </div>
+    </div>
+)
+
+}
+
+export default Cart;
+
+
+
+/*
+
+import { useSelector } from 'react-redux';
+import icon_cart from '../../picture/icons/icon_cart.png';
 import { getCartItems, getTotalPrice, getTotalQuantity } from '../../redux/cartSlice';
 import CartItem from './CartItem';
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
 import '../../App.css';
-import Content from '../../Modal/Content';
-import Modal from '../../Modal/Modal';
+import Content from '../Modal/Content';
+import Modal from '../Modal/Modal';
 
 
 import {
@@ -38,13 +94,14 @@ const checkCartnotEmpty = () => {
     } else {
     return (
         <div className={isActive ? 'cart-items' : 'cart-items hide'}>
-            {cartItems.map((cartItem, id) => <CartItem cartItem={cartItem} key={id}/>)}
+            {cartItems.map(cartItem => <CartItem cartItem={cartItem} key={cartItem}/>)}
             <hr/>
 
             <div className='container-buy'>
                 <h3 className='item-total'>{t("TOTAL")}: ${totalPrice.toFixed(0)}</h3>
 
                 <button onClick={ () => setIsOpen(true) } className='btn-buy'>{t("BUY")}</button>
+
                 {isOpen && 
                 <Modal setIsOpen={setIsOpen}>
                 <Content setIsOpen={setIsOpen}/>
@@ -81,3 +138,5 @@ return(
 }
 
 export default Cart;
+
+*/

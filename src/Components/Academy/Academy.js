@@ -30,7 +30,7 @@ function Academy(){
             const{description, showMore} = item;
 
             return(
-            <div className="cont">
+            <div className="cont" key={description}>
                     <p className="textAcademy">{t(showMore ? description : description.substring(0,140) + ' ....')}
                     <button className='btnShow' onClick={() => showTextClick(item)}>{t(showMore ? 'show less' : 'show more')}</button>
                     </p>

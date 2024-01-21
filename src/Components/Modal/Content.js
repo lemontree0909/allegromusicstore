@@ -1,4 +1,4 @@
-import close from '../picture/icons/close.png';
+import close from '../../picture/icons/close.png';
 import { useTranslation } from "react-i18next";
 import './Style.css';
 
