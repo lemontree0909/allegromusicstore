@@ -1,3 +1,5 @@
+
+
 import { useSelector } from 'react-redux';
 import icon_cart from '../../picture/icons/icon_cart.png';
 import { getTotalQuantity } from '../../redux/cartSlice';
@@ -8,33 +10,33 @@ import FullCart from './FullCart';
 
 const Cart = () => {
     const quantity = useSelector(getTotalQuantity);
-    const setIsActive = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
 
 
 const checkCartnotEmpty = () => {
     if (quantity === 0) {
         return (
-            <EmptyCart/>
-        ) 
+            <EmptyCart emptyCart={emptyCart}/>
+    ) 
     } else {
     return (
-        <FullCart/>
+        <FullCart fullCart={fullCart}/>
     )
 }
 }
 
-const onCartHide = (event) => {
-// 👇️ toggle isActive state on click
-    setIsActive(current => !current);
-} 
+// const onCartHide = (event) => {
+// // 👇️ toggle isActive state on click
+//     setIsActive(current => !current);
+// } 
 // const onCartHide = () => setIsActive(!isActive);
 
 
 return(
     <div>
         <div className="cart-btn">
-            <button onClick={onCartHide} className='cart-icon'>
+            <button onClick={() => setIsActive(!isActive)} className='cart-icon'>
                 <img className='cartIcon' src={icon_cart} alt="icon"/>
             </button>
             <p className='item-count'>({quantity})</p>
@@ -76,6 +78,8 @@ const Cart = () => {
     const [isActive, setIsActive] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const { t } = useTranslation();
+    
+    
 
 
 const checkCartnotEmpty = () => {
@@ -115,19 +119,24 @@ const checkCartnotEmpty = () => {
 }
 }
 
-const onCartHide = (event) => {
-// 👇️ toggle isActive state on click
-    setIsActive(current => !current);
-} 
+
+
+
+
+// const onCartHide = (event) => {
+// // 👇️ toggle isActive state on click
+//     setIsActive(current => !current);
+// } 
 
 return(
     <div>
         <div className="cart-btn">
-            <button onClick={onCartHide} className='cart-icon'>
+            <button onClick={() => setIsActive(!isActive)} className='cart-icon'>
                 <img className='cartIcon' src={icon_cart} alt="icon"/>
             </button>
             <p className='item-count'>({quantity})</p>
         </div>
+        
         
         <div className='cart-dropdown-container'>
             {checkCartnotEmpty()}
@@ -138,5 +147,6 @@ return(
 }
 
 export default Cart;
+
 
 */

@@ -7,10 +7,10 @@ import '../../App.css';
 import Content from '../Modal/Content';
 import Modal from '../Modal/Modal';
 
-const FullCart = () => {
+const FullCart = ({fullCart}) => {
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice);
-    const isActive = useState(false);
+    const [isActive, setIsActive] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const { t } = useTranslation();
 

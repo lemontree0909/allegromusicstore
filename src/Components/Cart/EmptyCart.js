@@ -6,11 +6,9 @@ import {
   } from "react-router-dom";
 
 
-
-
-const EmptyCart = () => {
+const EmptyCart = ({emptyCart}) => {
     const { t } = useTranslation();
-    const isActive = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
     return(
 
@@ -24,5 +22,4 @@ const EmptyCart = () => {
             </div>
             )
 }
-
 export default EmptyCart;
