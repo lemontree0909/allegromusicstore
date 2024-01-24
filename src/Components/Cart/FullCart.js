@@ -10,14 +10,13 @@ import Modal from '../Modal/Modal';
 const FullCart = ({fullCart}) => {
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice);
-    const [isActive, setIsActive] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const { t } = useTranslation();
 
 
     return(
 
-        <div className={isActive ? 'cart-items' : 'cart-items hide'}>
+        <div className={fullCart ? 'cart-items' : 'cart-items hide'}>
             {cartItems.map(cartItem => <CartItem cartItem={cartItem} key={cartItem}/>)}
 
             <hr/>

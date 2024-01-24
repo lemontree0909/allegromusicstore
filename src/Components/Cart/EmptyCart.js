@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useTranslation } from "react-i18next";
 import '../../App.css';
 import {
@@ -8,11 +7,10 @@ import {
 
 const EmptyCart = ({emptyCart}) => {
     const { t } = useTranslation();
-    const [isActive, setIsActive] = useState(false);
 
     return(
 
-            <div className={isActive ? 'cart-items' : 'cart-items hide'}>
+            <div className={emptyCart ? 'cart-items' : 'cart-items hide'}>
                 <h4 className='empty-cart'>{t("YOUR CART IS EMPTY")}</h4>
 
                 <Link to='/'>

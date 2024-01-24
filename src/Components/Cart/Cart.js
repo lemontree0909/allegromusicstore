@@ -11,26 +11,21 @@ import FullCart from './FullCart';
 const Cart = () => {
     const quantity = useSelector(getTotalQuantity);
     const [isActive, setIsActive] = useState(false);
+    console.log(isActive)
 
 
 
 const checkCartnotEmpty = () => {
     if (quantity === 0) {
         return (
-            <EmptyCart emptyCart={emptyCart}/>
+            <EmptyCart emptyCart={isActive}/>
     ) 
     } else {
     return (
-        <FullCart fullCart={fullCart}/>
+        <FullCart fullCart={isActive}/>
     )
 }
 }
-
-// const onCartHide = (event) => {
-// // 👇️ toggle isActive state on click
-//     setIsActive(current => !current);
-// } 
-// const onCartHide = () => setIsActive(!isActive);
 
 
 return(
@@ -127,6 +122,10 @@ const checkCartnotEmpty = () => {
 // // 👇️ toggle isActive state on click
 //     setIsActive(current => !current);
 // } 
+
+OR
+// const onCartHide = () => setIsActive(!isActive);
+
 
 return(
     <div>
