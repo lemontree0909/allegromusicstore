@@ -7,7 +7,7 @@ function Shop() {
   return (
     <div>
 
-      <div className='navbar'>
+      <div>
         <AllCategories/>
       </div>
 

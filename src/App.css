@@ -63,6 +63,23 @@ nav {
   flex-wrap: wrap;
   width: 100%;
 }
+
+.search-container{
+  display: flex;  
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+input{
+  font-family: 'Ubuntu', sans-serif;
+}
+.search{
+  font-size: medium;
+  line-height: 1.2em;
+  margin: 10px auto;
+}
+
+
 .conter, .academyImage, .icon-home{
   display: flex;
   justify-content: space-around;
@@ -543,6 +560,14 @@ p, h1, h2, button, span {
     width: 90%;
     margin-top: -35px;
   }
+  .search-container{
+    position: absolute;
+    width: 97%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -75px;
+  }
+
   .conter, .navbar{
     display: flex;
     align-items: center;    
@@ -616,7 +641,9 @@ p, h1, h2, button, span {
     min-width: 45px;
     padding: 5px;
   }
-
+  .search-container{
+    margin-top: -85px;
+  }
   .icon{
     padding: 10px;
   }
