@@ -13,7 +13,7 @@ const Instrument = ({instrument}) => {
     const items = useSelector(getCartItems);
     const { t } = useTranslation();
 
-    
+
     const itemsInCart = items.some(item => item.instrumentId === instrument.id);
 
     const addToCart = () => {

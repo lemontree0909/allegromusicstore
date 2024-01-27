@@ -7,26 +7,26 @@ function Carousel(){
 
     const { t } = useTranslation();
 
-    const  [instrument, setInstrument] = useState(0);
-    const {image} = dataPromo[instrument];
+    const  [instrumentCarousel, setInstrumentCarousel] = useState(0);
+    const {image} = dataPromo[instrumentCarousel];
 
     const previousInstrument = () => {
-        setInstrument (( instrument =>{
-            instrument --;
-            if (instrument<0){
+        setInstrumentCarousel (( instrumentCarousel =>{
+            instrumentCarousel --;
+            if (instrumentCarousel<0){
                 return dataPromo.length -1;
             }
-            return instrument;
+            return instrumentCarousel;
         }))
     }
 
     const nextInstrument = () => {
-        setInstrument (( instrument =>{
-            instrument ++;
-            if (instrument>dataPromo.length -1){
-                instrument=0;
+        setInstrumentCarousel (( instrumentCarousel =>{
+            instrumentCarousel ++;
+            if (instrumentCarousel>dataPromo.length -1){
+                instrumentCarousel=0;
             }
-            return instrument;
+            return instrumentCarousel;
         }))
     }
 

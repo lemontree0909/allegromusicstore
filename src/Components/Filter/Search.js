@@ -1,18 +1,13 @@
 import { useMemo, useState } from "react";
 import '../../App.css';
 
-
-const Search = ({ dataInstruments, setInstruments }) =>{
-    
+const Search = ({ dataInstruments, setInstrument }) =>{
 
     const [text, setText] = useState("");
     const [search, setSearch] = useState("");
 
-
     const handleText = (e) => {
         setText(e.target.value)
-        console.log(e.target.value)
-
     }
 
     const handleSearch = () => {
@@ -26,27 +21,21 @@ const Search = ({ dataInstruments, setInstruments }) =>{
             const filteredItems = [];
             dataInstruments.forEach(instrumentName => {
 
-
                 if (instrumentName.category.toLowerCase().includes(search.toLocaleLowerCase())) { 
                     console.log(instrumentName.category.toLowerCase().includes(search.toLocaleLowerCase()))
-
                     filteredItems.push(instrumentName);
-
                 }
 
                 else if (instrumentName.name.toLowerCase().includes(search.toLocaleLowerCase())) {
-                    console.log(instrumentName.name.toLowerCase().includes(search.toLocaleLowerCase()))
-
                     filteredItems.push(instrumentName);
                 }
                 else {
-                    setInstruments(filteredItems);
-
+                    setInstrument(filteredItems);
                 }
         })
     }
-    }, [search, dataInstruments, setInstruments])
-
+    // eslint-disable-next-line
+    }, [search, dataInstruments])
 
     return(
         <div>

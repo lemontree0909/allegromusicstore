@@ -11,9 +11,6 @@ import FullCart from './FullCart';
 const Cart = () => {
     const quantity = useSelector(getTotalQuantity);
     const [isActive, setIsActive] = useState(false);
-    console.log(isActive)
-
-
 
 const checkCartnotEmpty = () => {
     if (quantity === 0) {
