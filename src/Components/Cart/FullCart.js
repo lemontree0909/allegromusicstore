@@ -17,7 +17,7 @@ const FullCart = ({fullCart}) => {
     return(
 
         <div className={fullCart ? 'cart-items' : 'cart-items hide'}>
-            {cartItems.map(cartItem => <CartItem cartItem={cartItem} key={cartItem}/>)}
+            {cartItems.map((cartItem, index) => <CartItem cartItem={cartItem} key={index}/>)}
 
             <hr/>
 

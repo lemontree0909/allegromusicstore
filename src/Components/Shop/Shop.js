@@ -2,19 +2,17 @@ import { useState } from 'react';
 import '../../App.css';
 import AllCategories from '../../Components/Filter/AllCategories';
 import Instruments from '../../Components/InstrumentsComponents/Instruments';
-import dataInstruments from '../../data/dataInstruments';
 import Search from '../Filter/Search';
 
 
 function Shop() {
 
-  const [instrument, setInstrument] = useState(dataInstruments);
+  const [searchValue, setSearchValue] = useState('');
 
   return (
     <div>
       <div className="search-container">
-        <Search dataInstruments={dataInstruments}
-                setInstrument={setInstrument}/>
+        <Search setSearchValue={setSearchValue}/>
       </div>
 
       <div>
@@ -22,7 +20,7 @@ function Shop() {
       </div>
 
       <div className='products'>
-        <Instruments instrument={instrument}/>
+        <Instruments searchValue={searchValue}/>
       </div>
 
     </div>

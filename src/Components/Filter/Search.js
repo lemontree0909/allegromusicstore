@@ -1,46 +1,15 @@
-import { useMemo, useState } from "react";
 import '../../App.css';
+import { useTranslation } from "react-i18next";
 
-const Search = ({ dataInstruments, setInstrument }) =>{
 
-    const [text, setText] = useState("");
-    const [search, setSearch] = useState("");
+const Search = ({ setSearchValue }) =>{
 
-    const handleText = (e) => {
-        setText(e.target.value)
-    }
+    const { t } = useTranslation();
 
-    const handleSearch = () => {
-        setSearch(text)
-    }
-
-    useMemo(() => {
-        console.log ("Filtering")
-
-        if (search) {
-            const filteredItems = [];
-            dataInstruments.forEach(instrumentName => {
-
-                if (instrumentName.category.toLowerCase().includes(search.toLocaleLowerCase())) { 
-                    console.log(instrumentName.category.toLowerCase().includes(search.toLocaleLowerCase()))
-                    filteredItems.push(instrumentName);
-                }
-
-                else if (instrumentName.name.toLowerCase().includes(search.toLocaleLowerCase())) {
-                    filteredItems.push(instrumentName);
-                }
-                else {
-                    setInstrument(filteredItems);
-                }
-        })
-    }
-    // eslint-disable-next-line
-    }, [search, dataInstruments])
 
     return(
         <div>
-            <input type="text" onChange={handleText}></input>
-            <button type="submit" className="search" onClick={handleSearch}>🔍</button>
+            <input type="text" placeholder={t("Search...")} className="search" onChange={e => setSearchValue(e.target.value)}></input>
         </div>
     )
 }

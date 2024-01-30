@@ -29,6 +29,7 @@ nav {
 }
 .link{
   padding: 10px 40px;
+  margin: 10px;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -552,8 +553,8 @@ p, h1, h2, button, span {
   .left-side{
     position: absolute;
     flex-wrap: nowrap;
-    margin-top: 70px;
-    font-size: 0.7em;
+    margin-top: 40px;
+    font-size: 1em;
   }
   .right-side{
     position: absolute;
@@ -565,9 +566,13 @@ p, h1, h2, button, span {
     width: 97%;
     display: flex;
     justify-content: flex-end;
-    margin-top: -75px;
+    margin-top: -35px;
   }
-
+  .search{
+    font-size: small;
+    line-height: 1.2em;
+    margin: 10px auto;
+  }
   .conter, .navbar{
     display: flex;
     align-items: center;    
@@ -598,7 +603,7 @@ p, h1, h2, button, span {
     font-size: 0.4em;
   }
   .link{
-    padding: 0 10px;
+    padding: 0 5px;
   }
 
   .btn{
@@ -622,9 +627,13 @@ p, h1, h2, button, span {
     align-items: center;
   }
 
-
 }
 
+@media all and (max-width: 750px){
+  .left-side{
+    font-size: 0.75em;
+  }
+}
 
 @media all and (max-width: 500px) {
   .conter, .navbar, .container{
@@ -641,8 +650,16 @@ p, h1, h2, button, span {
     min-width: 45px;
     padding: 5px;
   }
+  .left-side{
+    font-size: 0.6em;
+  }
+
+  .link{
+    margin: 5px;
+  }
+
   .search-container{
-    margin-top: -85px;
+    margin-top: -40px;
   }
   .icon{
     padding: 10px;
