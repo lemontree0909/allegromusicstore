@@ -281,7 +281,7 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: consolas;
+  font-family: 'Ubuntu', sans-serif;
 }
 .containerCard{
   width: 1000px;
@@ -493,13 +493,9 @@ p, h1, h2, button, span {
   .left-side{
     position: absolute;
     flex-wrap: nowrap;
-<<<<<<< HEAD
     margin-top: 60px;
-    font-size: 1.1em;
-=======
-    margin-top: 50px;
     font-size: 1em;
->>>>>>> 8a771fe07f5a3c7c6c8e575352962cfb79c8046f
+
   }
   .right-side{
     position: absolute;
