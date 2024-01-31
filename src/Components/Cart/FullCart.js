@@ -13,7 +13,6 @@ const FullCart = ({fullCart}) => {
     const [isOpen, setIsOpen] = useState(false);
     const { t } = useTranslation();
 
-
     return(
 
         <div className={fullCart ? 'cart-items' : 'cart-items hide'}>

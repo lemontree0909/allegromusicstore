@@ -6,12 +6,9 @@ import '../../App.css';
 
 
 const CartItem = ({cartItem}) => {
-    console.log(cartItem)
     const { t } = useTranslation();
     const instruments = dataInstruments.find(item => item.id === cartItem.instrumentId);
     const dispatch = useDispatch();
-    console.log(instruments);
-
 
     return(
         <div>

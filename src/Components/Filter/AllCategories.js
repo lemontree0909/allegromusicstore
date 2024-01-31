@@ -6,7 +6,6 @@ const AllCategories = () => {
 
     return (
         <div>
-
             <div className="navbar">
                 <div className="navbarElements">
                     {['ALL', 'PIANOS', 'GUITARS', 'DRUMS AND PERCUSSION', 'KEYBOARDS', 'STUDIO / DJ', 'EFFECTS', 'AMPLFIERS', 'STRINGS', 'BREATHINGS', 'DUBBING', 'HI-FI', 'LESSONS']

@@ -36,7 +36,6 @@ const Instrument = ({instrument}) => {
 
             <div className="order">
                 <h3>$ {price}</h3>
-        {/* отдельный компонент кнопки */}
                 <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
             </div>
             

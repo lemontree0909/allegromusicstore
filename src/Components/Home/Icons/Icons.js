@@ -16,7 +16,7 @@ return(
                 <div className='icon' key={id}>
                     <img className='icon-image' src={icon} alt="icon"/>
                     <h2 className='icon-text'>{t(title)}</h2>
-                    <p className='icon-text'>{t(text)}</p>
+                    <p className='icon-text-small'>{t(text)}</p>
 
                 </div>
             )

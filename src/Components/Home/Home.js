@@ -3,7 +3,6 @@ import Icons from "./Icons/Icons";
 
 function Home(){
 
-
     return(
         <div>
             <Carousel/>
